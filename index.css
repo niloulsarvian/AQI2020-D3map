@@ -1,3 +1,13 @@
+
+
+
+/*Title*/
+h1 {
+  font: 25px sans-serif;
+  text-align: center;
+}
+
+
 /* On mouse hover, lighten state color */
 path:hover {
 	fill-opacity: .7;
@@ -19,22 +29,51 @@ div.tooltip {
         
 /* Legend Font Style */
 body {
-	font: 11px sans-serif;
+	font: 12px sans-serif;
+  left:100px;
 }
-        
+
+/*instructions*/
+h2 {
+  font: 14px sans-serif ;
+  font-style: italic;
+  color: grey; 
+}
+
+/*day/date*/
+h3 {
+  font: 15px sans-serif;
+  font-weight: bold;
+  float: left;
+}
+
+h4 {
+  font: 15px sans-serif;
+  float:left;
+  left:1500px;
+
+}
+
+h5 {
+  font: 12px sans-serif;
+  left:1500px;
+
+}
+
 /* Legend Position Style */
 .legend {
 	position:absolute;
-	left:1500px;
+	left: 1050px;
 	top:350px;
 }
 /*Slider*/
 .slider {
   -webkit-appearance: none;
-  width: 100%;
+  width: 800px;
+  margin: 10px;
   height: 25px;
-  border-radius: 5px;
-  background: #d3d3d3;
+  border-radius: 10px;
+  background: #ffdfbf;
   outline: none;
   opacity: 0.7;
   -webkit-transition: .2s;
@@ -46,8 +85,6 @@ body {
   appearance: none;
   width: 25px;
   height: 25px;
-  border-radius: 50%;
-  background: #4CAF50;
   cursor: pointer;
 }
 
@@ -55,6 +92,6 @@ body {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: #0000;
+  background: #98fb98;
   cursor: pointer;
 }
