@@ -60,7 +60,7 @@ h5 {
 
 }
 
-/* Legend Position Style */
+/* Legend Position Style fixed bug */
 .legend {
 	position:absolute;
 	left: 1050px;
