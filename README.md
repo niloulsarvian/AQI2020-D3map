@@ -1,7 +1,10 @@
 # AQI2020-D3map
 
-This project was selected due to the magnitude of the wildfires across the west during 2020, and I wished to see how this affected air quality across neighboring states. I used D3.js to create the map, HTML + CSS to create the slider function, and Bokeh (in python) to create the plots below the map. All of these can help illustrate how certain fires affected different states and/or regions. 
+Abstract:
+There was a large magnitude of wildfires across the west during 2020, and this project visualizes how this affected air quality across neighboring states. Each color represents a certain range on the Air Quality Index (AQI), as measured by PM2.5 (2.5 micrometers in particle size). PM2.5 can travel deep into the lungs, having serious health consequences. With increasing temperature due to climate change, the west becomes particularly susceptible to repeated wildfires, and therefore health risks that may inevitably lead to a climate driven emigration. Visualizing the affected regions could help future planners anticipate population density changes within the U.S.
 
+
+Further detail:
 This project was selected due to the magnitude of the wildfires across the west during 2020, and I wished to see how this affected air quality across neighboring states. I used D3.js to create the map, HTML + CSS to create the slider function, and Bokeh (in python) to create the plots below the map. All of these can help illustrate how certain fires affected different states and/or regions. 
 
 Air quality was measured every day from 1/1/2020 - 10/31/2020. I sub-selected the data to only include data that was Particulate Matter 2.5 (PM 2.5), meaning the particles are 2.5 micrometers in size. Because the particles are so small, PM2.5 can travel deep into the lungs, having serious health consequences. They are also the size range that cause the air to look hazy and slightly obscure sunshine. The data set was taken from https://aqs.epa.gov/aqsweb/airdata/download_files.html, and came with individual county data. I averaged all the counties in each state to give it one daily value, as I did not have a packages in D3.js to place the data in each county. 
