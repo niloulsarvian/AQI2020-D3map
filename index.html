@@ -21,48 +21,58 @@
 		
 		
 		<!-- Title -->
-		<h1>USA Daily Average Air Quality (PM2.5) in 2020</h1>
+		<h1>Daily Average Air Quality (PM2.5) in the U.S.</h1>
 
-		<button onclick="my2020function()" style = "margin-left : 120px">2020</button>
-		<button onclick="my2015function()">2015</button>
-		<button onclick="my2010function()">2010</button>
-			<!-- slider instructions -->
-			<h3> Drag the slider to change the date.
-			
-				<p>Day: <span id="demo"> </span> </p>
-			 	<p> Date: <span id="demo1"> </span> </p> 
-			 </h3>
+	
+		
+
+			<h4>
+	  				<p> This map illustrates the average daily particulate matter 2.5. Individual readings taken from different counties in each state.</p>
+	  				<p>There was a large magnitude of wildfires across the west during 2020, and this project visualizes how this affected air quality across neighboring states. Each color represents a certain range on the Air Quality Index (AQI), as measured by PM2.5 (2.5 micrometers in particle size). PM2.5 can travel deep into the lungs, having serious health consequences. With increasing temperature due to climate change, the west becomes particularly susceptible to repeated wildfires, and therefore health risks that may inevitably lead to a climate driven emigration. Visualizing the affected regions could help future planners anticipate population density changes within the U.S.
+	  				</p>
+	  				<p>Data was taken from the <a href = "https://aqs.epa.gov/aqsweb/airdata/download_files.html" target="_blank"> EPA</a>, sorted for PM2.5 and averaged daily county values for each state. Values were sorted using the <a href= "https://www.sparetheair.com/aqi.com" target = "_blank" </a> Air Quality Index (AQI)</a>. </p>
+	  				
+	  			</h4>
+	
+	<h2>
+	  	<button class = "button button1" onclick="my2010function()">2010</button>
+		<button class = "button button2" onclick="my2015function()">2015</button>
+		<button class = "button button3" onclick="my2020function()" >2020</button>
+	</h2>
+
+		
 			 
-			
+		<h2>
 			<!-- Slider  -->
 			<div class="slidecontainer">
 	  			<input type="range" min="1" max="364" value="0" class="slider" id="myRange">
-	  			
-	  			<h4>
-	  				<p> This map illustrates the average daily particulate matter 2.5 during 2020. Individual readings taken from different counties in each state.</p>
-	  				<p> Data was taken from the <a href = "https://aqs.epa.gov/aqsweb/airdata/download_files.html" target="_blank"> EPA</a>, sorted for PM2.5 and averaged daily county values for each state. Values were sorted using the <a href= "https://www.sparetheair.com/aqi.com" target = "_blank" </a> Air Quality Index (AQI)</a>. </p>
-	  				<p>The plots below are visualized using Bokeh, and have been sorted generally acording to region. </p>
-	  				<p> Use the toolbox in the upper right corner of the Bokeh plots to zoom out/in or subselect points on the plots to show how they correlate across states. </p>
-	  			</h4>
+	  		
 	  		</div>
-				
-	  			</div>
+	  			<!-- slider instructions -->
+			<p>
+				<h2> 
+				<p></p>
+				<p>Day: <span id="demo"> </span> </p>
+			 	<p> Date: <span id="demo1"> </span> </p> 
+			 </h2>
+			</p>
+
+		</h2>
 			<!-- Legend -->
-			<div id = "d3container" style = "margin-left : 120px"> </div>
-		<!-- Description of the D3 map -->
-		<!-- <p> 
-			<div> 
-				<h4>
-	  				<p> This map illustrates the average daily particulate matter 2.5 during 2020. Individual readings taken from different counties in each state. </p>
-	  				<p> Nilou was here </p>
-	  				 </p> 
-	  			</h4>
-	  		</div>
-	  	</p> -->
+			<div id = "d3container" style = "margin-right : 550px"> </div>
+
 
 				<!-- Description of Bokeh plot -->
+			<h3>
+				<p>
 
 				
+						<p>The plots below are visualized using Bokeh, and have been sorted generally acording to region. </p>
+		  				<p> Use the toolbox in the upper right corner of the Bokeh plots to zoom out/in or subselect points on the plots to show how they correlate across states. </p>
+				</p>
+			</h3>
+
+
 			<p><script src="AQImapD3.js"> </script></p>
 			
 			<!-- bokeh -->
@@ -76,9 +86,12 @@
 			</p>
 		
 		<!-- bokeh -->
+
+		<h1>
 		 <script type="text/javascript" id="31638" src = "bokehData.js"> </script>
 		 
 		 <script src="bokehScript.js"> </script>
+		</h1>
 		 <!-- bokeh -->
 
 
