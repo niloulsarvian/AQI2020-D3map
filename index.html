@@ -16,10 +16,16 @@
         <!-- bokeh -->
 
 	</head>
+	
 	<body>
+		
 		
 		<!-- Title -->
 		<h1>USA Daily Average Air Quality (PM2.5) in 2020</h1>
+
+		<button onclick="my2020function()" style = "margin-left : 120px">2020</button>
+		<button onclick="my2015function()">2015</button>
+		<button onclick="my2010function()">2010</button>
 			<!-- slider instructions -->
 			<h3> Drag the slider to change the date.
 			
@@ -61,15 +67,36 @@
 			
 			<!-- bokeh -->
 			<p>
-			 <div class="bk-root" id="8456b0b0-9c02-4d0e-8363-01050bbf0c6e" data-root-id="13122"></div>
-			 <!-- bokeh -->
+			 <div class="bk-root" id="5eef1de4-a7a5-4534-a92e-8b7d429fae94" data-root-id="23761"></div>
+			 <!-- 2020 -->
+			 <div class="bk-root" id="b61bb32c-1dbb-4b48-b439-2d2ede0bc3e5" data-root-id="34825"></div>
+			 <!-- 2015 -->
+			  <div class="bk-root" id="e9203ed3-d39b-4aaf-8315-d87ff33cbc19" data-root-id="23762"></div>
+			 <!-- 2010 -->
 			</p>
 		
 		<!-- bokeh -->
-		 <script type="text/javascript" id="20573" src = "bokehData.js"> </script>
+		 <script type="text/javascript" id="31638" src = "bokehData.js"> </script>
 		 
 		 <script src="bokehScript.js"> </script>
 		 <!-- bokeh -->
+
+
+		<script>
+		function my2020function() {
+			initbokeh(docs_json2020, rend_data2020)
+			init("categoriesforStates.csv",2020)
+		}
+		function my2015function() {
+			initbokeh(docs_json2015, rend_data2015)
+			init("categoriesforStates2015.csv",2015)
+		}
+		function my2010function() {
+			initbokeh(docs_json2010, rend_data2010)
+			init("categoriesforStates2010.csv",2010)
+		}
+
+		</script>
 	</body>
 
 </html>

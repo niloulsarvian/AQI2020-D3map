@@ -1,13 +1,13 @@
-   
-          (function() {
+    function initbokeh (mydata,rend_data) {
+    	d3.selectAll(".bk-root").selectAll("div").remove()
             var fn = function() {
               Bokeh.safely(function() {
                 (function(root) {
                   function embed_document(root) {
                     
-                  // var docs_json = document.getElementById('20573').textContent;
-                  var render_items = [{"docid":"597c7699-dd38-45e6-94a4-48269eed62fd","roots":{"13122":"8456b0b0-9c02-4d0e-8363-01050bbf0c6e"}}];
-                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                  //var docs_json = document.getElementById('31638').textContent;
+                  var render_items = rend_data;
+                  root.Bokeh.embed.embed_items(mydata, render_items);
                 
                   }
                   if (root.Bokeh !== undefined) {
@@ -31,4 +31,5 @@
             };
             if (document.readyState != "loading") fn();
             else document.addEventListener("DOMContentLoaded", fn);
-          })();
+          }
+initbokeh(docs_json2020,rend_data2020)
