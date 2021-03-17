@@ -67,22 +67,22 @@ function colorbymap(day) {
 		var value = d.properties.dataValue;
 		
 		if (value == "Good") {
-			return "#14b81a";
+			return "#98efab";
 		}
 		else if (value == "Moderate") {
-			return "#FFD700";
+			return "#f8f8b0";
 		}
 		else if (value == "Unhealthy for Sensitive Groups") {
-			return "#d68910";
+			return "#f7ca8f";
 		}
 		else if (value == "Unhealthy") {
-			return " #d35400 ";
+			return " #e8999b ";
 		}
 		else if (value == "Very Unhealthy") {
-			return "purple";
+			return "#B3A0C9";
 		}
 		else if (value == "Hazardous") {
-			return "#641e16";
+			return "#80002A";
 
 		} else {
 			return "grey";
@@ -119,7 +119,7 @@ function initplot () {
 			
 	// Define linear scale for output
 	 color = d3.scale.linear()
-				  .range(["grey", "#641e16", "purple", "#d35400", "#d68910", "#FFD700", "#14b81a"]);
+				  .range(["grey", "#80002A", "#B3A0C9", "#e8999b", "#f7ca8f", "#f8f8b0", "#98efab"]);
 						// "grey", "maroon", "purple", "red", "orange", "yellow", "green"
 
 	 legendText = ["Good", "Moderate", "Unhealthy for Sensitive Groups",
@@ -162,13 +162,13 @@ function startplot () {
 	     			.attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
 
 	  	legend.append("rect")
-	   		  .attr("width", 18)
+	   		  .attr("width", 20)
 	   		  .attr("height", 18)
 	   		  .style("fill", color);
 
 	  	legend.append("text")
 	  		  .data(legendText)
-	      	  .attr("x", 24)
+	      	  .attr("x", 50	)
 	      	  .attr("y", 9)
 	      	  .attr("dy", ".35em")
 	      	  .text(function(d) { return d; });

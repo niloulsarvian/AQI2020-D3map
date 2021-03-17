@@ -63,12 +63,26 @@ h5 {
 
 }
 
+.column {
+	/*text-align: left;*/
+    float: center;
+    /*width: 80%;*/
+    margin-left: auto;
+    margin-right: auto;
+    width: 750px
+    }
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /* Legend Position Style fixed bug */
 .legend {
 	position:absolute;
 	left: 950px;
-	top:450px;
-	/*text-align: center;*/
+	top:750px;
+	text-align: center;
 }
 /*Slider*/
 
@@ -88,25 +102,18 @@ h5 {
   width: 800px;
   margin: 10px;
   height: 25px;
-  border-radius: 10px;
+  border-radius: 20px;
   background: #000000;
   outline: #000000;
   opacity: 0.7;
   -webkit-transition: .2s;
   transition: opacity .2s;
+  cursor: pointer; 
 }
-.slider:hover {
-  opacity: 3;
+/*.slider:hover {
+  opacity: 7;
 }
-
-.slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
-  /*text-align: center;*/
-}
+*/
 
 /*button*/
 .button {
@@ -120,6 +127,7 @@ h5 {
   cursor: pointer;
 
 }
+
 .button1 {font-size: 20px; background-color: #000000;}
 .button2 {font-size: 20px; background-color: #000000;}
 .button3 {font-size: 20px; background-color: #000000;}

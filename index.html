@@ -21,18 +21,28 @@
 		
 		
 		<!-- Title -->
-		<h1>Daily Average Air Quality (PM2.5) in the U.S.</h1>
+		<h1>Daily Average Air Quality in the U.S.</h1>
 
 	
 		
 
-			<h4>
-	  				<p> This map illustrates the average daily particulate matter 2.5. Individual readings taken from different counties in each state.</p>
+		<h4>
+			<div class = "row">
+				
+				<div class = "column">
+	  				<p> This map illustrates the average daily particulate matter 2.5. Individual readings taken from different counties in each state.
+	  				Data was taken from the <a href = "https://aqs.epa.gov/aqsweb/airdata/download_files.html" target="_blank"> EPA</a>, sorted for PM2.5 and averaged daily county values for each state. Values were sorted using the <a href= "https://www.sparetheair.com/aqi.com" target = "_blank" </a> Air Quality Index (AQI)</a>. </p>
+	  			</div>
+
+	  			<div class = "column">
 	  				<p>There was a large magnitude of wildfires across the west during 2020, and this project visualizes how this affected air quality across neighboring states. Each color represents a certain range on the Air Quality Index (AQI), as measured by PM2.5 (2.5 micrometers in particle size). PM2.5 can travel deep into the lungs, having serious health consequences. With increasing temperature due to climate change, the west becomes particularly susceptible to repeated wildfires, and therefore health risks that may inevitably lead to a climate driven emigration. Visualizing the affected regions could help future planners anticipate population density changes within the U.S.
 	  				</p>
-	  				<p>Data was taken from the <a href = "https://aqs.epa.gov/aqsweb/airdata/download_files.html" target="_blank"> EPA</a>, sorted for PM2.5 and averaged daily county values for each state. Values were sorted using the <a href= "https://www.sparetheair.com/aqi.com" target = "_blank" </a> Air Quality Index (AQI)</a>. </p>
+	  			</div>
+	  		</div>
+	  			
 	  				
-	  			</h4>
+	  			
+	  	</h4>
 	
 	<h2>
 	  	<button class = "button button1" onclick="my2010function()">2010</button>
@@ -57,25 +67,31 @@
 			 </h2>
 			</p>
 
-		</h2>
-			<!-- Legend -->
-			<div id = "d3container" style = "margin-right : 550px"> </div>
 
+			<!-- Legend -->
+			<h4>
+				<div id = "d3container" > </div>
+			</h4>
 
 				<!-- Description of Bokeh plot -->
-			<h3>
-				<p>
-
+			<div class = "row">
 				
-						<p>The plots below are visualized using Bokeh, and have been sorted generally acording to region. </p>
-		  				<p> Use the toolbox in the upper right corner of the Bokeh plots to zoom out/in or subselect points on the plots to show how they correlate across states. </p>
-				</p>
-			</h3>
+				<div class = "column">
+					<h3>
 
+
+						
+								<p>The plots below are visualized using Bokeh, and have been sorted generally acording to region. </p>
+				  				<p> Use the toolbox in the upper right corner of the Bokeh plots to zoom out/in or subselect points on the plots to show how they correlate across states. </p>
+						
+					</h3>
+				</div>
+			</div>
 
 			<p><script src="AQImapD3.js"> </script></p>
 			
 			<!-- bokeh -->
+
 			<p>
 			 <div class="bk-root" id="5eef1de4-a7a5-4534-a92e-8b7d429fae94" data-root-id="23761"></div>
 			 <!-- 2020 -->
@@ -87,11 +103,18 @@
 		
 		<!-- bokeh -->
 
-		<h1>
-		 <script type="text/javascript" id="31638" src = "bokehData.js"> </script>
-		 
-		 <script src="bokehScript.js"> </script>
-		</h1>
+				
+
+			
+
+				 <script type="text/javascript" id="31638" src = "bokehData.js"> </script>
+				 
+				 <script src="bokehScript.js"> </script>
+
+
+
+
+
 		 <!-- bokeh -->
 
 
